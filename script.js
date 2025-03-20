@@ -3,20 +3,19 @@ let togglePassword = document.getElementById("togglePassword");
 let icon = togglePassword.querySelector("i");
 let progressBar = document.querySelector('.progress .bar');
 
-// Alternar visibilidade da senha
 togglePassword.addEventListener("click", function () {
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
         icon.classList.remove("fa-eye");
-        icon.classList.add("fa-eye-slash"); // Ícone de olho fechado
+        icon.classList.add("fa-eye-slash"); 
     } else {
         passwordInput.type = "password";
         icon.classList.remove("fa-eye-slash");
-        icon.classList.add("fa-eye"); // Ícone de olho aberto
+        icon.classList.add("fa-eye"); 
     }
 });
 
-// Validação da senha
+
 passwordInput.addEventListener('keyup', () => {
     let strength = 0;
 
