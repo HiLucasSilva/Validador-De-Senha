@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url('https://www.speakeragency.co.uk/media/ucljo41f/cyberxlarge.jpg');  
+    background-size: cover; 
+    background-position: center;  
+    background-attachment: fixed;
+    
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.14);
+    padding: 40px;
+    width: 400px;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(9, 224, 231, 0.7); /* Sombra opcional */
+}
+
+.password-container {
+    position: relative;
+    width: 300px;
+}
+
+.password-container input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.password-container button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Barra de progresso */
+.progress {
+    width: 300px;
+    height: 5px;
+    background-color: #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress .bar {
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Área de validação */
+.validator-area {
+    margin-top: 15px;
+    width: 300px;
+}
+
+.validator-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.valid-point {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
